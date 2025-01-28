@@ -1,0 +1,1 @@
+java -server -Xmx1024M -Xms128M -jar 1.19-server.jar nogui

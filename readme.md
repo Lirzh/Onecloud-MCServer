@@ -1,6 +1,10 @@
 # Onecloud-MCServer
 
-MC支持版本：1.8
+玩客云的我的世界服务器
+
+
+
+MC支持版本：1.8  1.12  1.17  1.18  1.19  1.20  1.20.4
 
 ------
 
@@ -10,7 +14,7 @@ MC支持版本：1.8
 java -version
 ```
 
-若低于java8或干脆没有(~~菜~~)
+若版本较低或干脆没有(~~菜~~)
 
 ```
 apt install default-jre
@@ -42,29 +46,40 @@ git clone https://bgithub.com/Lirzh/Onecloud-MCServer.git
 
 ```
 cd Onecloud-MCServer
+cd Server-Version
 ```
 
-4.启动
+4切换到你要的版本
+
+```
+cd <版本号>
+```
+
+例如我要玩 1.20.4
+
+```
+cd 1.20.4
+```
+
+5.启动
 
 临时启动：
 
-1.8：
-
 ```
-java -server -jar 1.8-server.jar nogui
+chmod 777 go.sh
+./go.sh
 ```
 
 后台运行：
 
-1.8：
-
 ```
 screen -S Onecloud-MCServer
-java -server -jar 1.8-server.jar nogui
+chmod 777 go.sh
+./go.sh
 ```
 
 维护请自行百度： screen 命令
 
-5. Play
+6.Play
 
-   服务器地址：玩客云的IP地址:25565
+服务器地址：玩客云的IP地址:25565
